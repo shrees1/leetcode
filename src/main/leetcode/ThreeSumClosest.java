@@ -14,10 +14,14 @@ public class ThreeSumClosest {
 
             while (j < k) {
                 int sum = nums[i] + nums[j] + nums[k];
-                if (sum == target) return sum;
-                else if (sum < target) j++;
-                else k--;
-
+                if (sum == target) {
+                    return sum;
+                } else if
+                (sum < target) {
+                    j++;
+                } else {
+                    k--;
+                }
                 if (Math.abs(target - sum) < minDiff) {
                     minDiff = Math.abs(target - sum);
                     result = sum;
@@ -30,7 +34,7 @@ public class ThreeSumClosest {
 
 
     public static void main(String[] args) {
-         int result = threeSumClosest(new int[]{-1, 1, 1}, 2);
+        int result = threeSumClosest(new int[]{-1, 2, 1, -4}, 1);
         System.out.print(result);
     }
 }

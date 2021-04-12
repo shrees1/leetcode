@@ -53,7 +53,7 @@ public class ValidParenthesis {
     }
 
     public static void main(String[] args) {
-        boolean result = isValid("([])");
+        boolean result = isValid("()]]");
         System.out.print(result);
     }
 }
